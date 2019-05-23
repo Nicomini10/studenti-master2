@@ -31,7 +31,8 @@ const routes: Routes = [
     { path: 'storico-esami', loadChildren: './pages/carriera/storico-esami/storico-esami.module#StoricoEsamiPageModule' },
     { path: 'tasse', loadChildren: './pages/servizi/tasse/tasse.module#TassePageModule' },
     { path: 'tutorial', loadChildren: './pages/account/tutorial/tutorial.module#TutorialPageModule' },
-    { path: 'grafico', loadChildren: './pages/grafico/grafico.module#GraficoPageModule' }
+    { path: 'grafico', loadChildren: './pages/grafico/grafico.module#GraficoPageModule' },
+  { path: 'statistiche-voti-esame', loadChildren: './statistiche-voti-esame/statistiche-voti-esame.module#StatisticheVotiEsamePageModule' }
     ];
 
 @NgModule({
