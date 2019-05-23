@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 
 import { IonicModule } from '@ionic/angular';
+import { ChartsModule } from 'ng2-charts';
+
 
 import { StatisticheVotiEsamePage } from './statistiche-voti-esame.page';
 
@@ -17,6 +19,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    ChartsModule,
     CommonModule,
     FormsModule,
     IonicModule,

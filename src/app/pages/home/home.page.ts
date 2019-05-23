@@ -622,7 +622,7 @@ export class HomePage implements OnInit {
         const element = this.lineChart.lastActive[0];
         const labelClicked = !element && $event && $event.offsetY && $event.offsetY < 30;
 
-        // console.dir(element);
+        console.dir(element);
         if (!element && !labelClicked) {
             this.globalData.goTo(this.currentPage, '/carriera', 'forward', false);
         }
