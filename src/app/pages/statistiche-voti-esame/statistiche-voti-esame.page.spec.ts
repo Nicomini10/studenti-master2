@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GraficoPage } from './grafico.page';
+import { StatisticheVotiEsamePage } from './statistiche-voti-esame.page';
 
-describe('GraficoPage', () => {
-  let component: GraficoPage;
-  let fixture: ComponentFixture<GraficoPage>;
+describe('StatisticheVotiEsamePage', () => {
+  let component: StatisticheVotiEsamePage;
+  let fixture: ComponentFixture<StatisticheVotiEsamePage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GraficoPage ],
+      declarations: [ StatisticheVotiEsamePage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GraficoPage);
+    fixture = TestBed.createComponent(StatisticheVotiEsamePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

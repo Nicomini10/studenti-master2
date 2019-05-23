@@ -3,15 +3,16 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Grafico Difficolta Esame
-    </ion-title>
+    <ion-title>Statistiche voti esame</ion-title>
     <ion-buttons slot="end">
-      <ion-back-button *ngIf="srcPage" defaultHref="{{srcPage}}" text="Indietro"></ion-back-button>
+      <ion-back-button *ngIf="srcPage" defaultHref="{{srcPage}}"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+
+  <ion-progress-bar color = "primary" value="0.9" ></ion-progress-bar>
   <google-chart [data]="pieChartData"></google-chart>
 </ion-content>
+

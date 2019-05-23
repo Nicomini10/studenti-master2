@@ -6,12 +6,12 @@ import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 
 import { IonicModule } from '@ionic/angular';
 
-import { GraficoPage } from './grafico.page';
+import { StatisticheVotiEsamePage } from './statistiche-voti-esame.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: GraficoPage
+    component: StatisticheVotiEsamePage
   }
 ];
 
@@ -23,6 +23,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     Ng2GoogleChartsModule
   ],
-  declarations: [GraficoPage]
+  declarations: [StatisticheVotiEsamePage]
 })
-export class GraficoPageModule {}
+export class StatisticheVotiEsamePageModule {}

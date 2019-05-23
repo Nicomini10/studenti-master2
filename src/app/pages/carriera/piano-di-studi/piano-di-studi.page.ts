@@ -441,7 +441,7 @@ export class PianoDiStudiPage implements OnInit {
                 text: 'Difficolta esame',
                 icon: 'flame',
                 handler: () => {
-                    this.globalData.goTo(this.currentPage, '/grafico', 'forward', false);
+                    this.globalData.goTo(this.currentPage, '/statistiche-voti-esame', 'forward', false);
                 }
             }, {
                 text: 'Dettali esame',
