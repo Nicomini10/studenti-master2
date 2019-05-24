@@ -101,9 +101,10 @@ export class StatisticheVotiEsamePage implements OnInit {
             chartType: 'PieChart',
             dataTable: [
                 ['Languages', 'Percent'],
-                ['1°Anno', 20],
-                ['2°Anno', 10],
-                ['3°Anno', 70]
+                ['1°Anno', 10],
+                ['2°Anno', 20],
+                ['3°Anno', 50],
+                ['Fuori corso', 20]
             ],
             options: {
                 'title': 'Superamento Esame',
