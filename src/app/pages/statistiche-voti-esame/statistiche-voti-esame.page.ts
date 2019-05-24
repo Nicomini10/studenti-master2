@@ -11,6 +11,11 @@ export class StatisticheVotiEsamePage implements OnInit {
     srcPage: string;
     pieChartData;
 
+    currentPage = '/statistiche-voti-esame';
+
+    public lineChartLegend: boolean = true;
+    public lineChartType: string = 'line';
+
     public lineChartData: Array<any> = [
         {data: [20, 24, 22, 30, 27, 19, 26], label: '1°Anno'},
         {data: [21, 24, 28, 20, 27, 30, 19], label: '2°Anno'},
@@ -53,10 +58,10 @@ export class StatisticheVotiEsamePage implements OnInit {
             pointBorderColor: '#fff',
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgba(148,159,177,0.8)'
-        }
+        },
+
+
     ];
-    public lineChartLegend: boolean = true;
-    public lineChartType: string = 'line';
 
     // public randomize(): void {
     //     let _lineChartData: Array<any> = new Array(this.lineChartData.length);
@@ -72,10 +77,12 @@ export class StatisticheVotiEsamePage implements OnInit {
     // events
     public chartClicked(e: any): void {
         console.log(e);
+        this.globalData.goTo(this.currentPage, '/grafico', 'forward', false);
     }
 
     public chartHovered(e: any): void {
         console.log(e);
+        this.globalData.goTo(this.currentPage, '/grafico', 'forward', false);
     }
 
 
