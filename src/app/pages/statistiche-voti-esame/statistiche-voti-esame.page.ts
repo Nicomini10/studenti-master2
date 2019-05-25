@@ -10,7 +10,6 @@ export class StatisticheVotiEsamePage implements OnInit {
 
     srcPage: string;
     pieChartData;
-    srcPage: string;
 
     currentPage = '/statistiche-voti-esame';
 
