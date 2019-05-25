@@ -105,7 +105,6 @@ export class StatisticheVotiEsamePage implements OnInit {
                 ['Fuori corso', 20]
             ],
             options: {
-                'title': 'Superamento Esame',
                 'width': 430,
                 'height': 300
             }
