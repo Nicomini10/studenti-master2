@@ -10,25 +10,25 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-
   <ion-progress-bar color = "primary" value="0.9" ></ion-progress-bar>
-  <google-chart [data]="pieChartData"></google-chart>
 
-  <div class="row">
+
+<google-chart [data]="pieChartData"></google-chart>
+
+<div class="row">
     <div class="col-md-6">
-      <div style="display: block;">
-        <canvas baseChart width="300" height="400"
-                [datasets]="lineChartData"
-                [labels]="lineChartLabels"
-                [options]="lineChartOptions"
-                [colors]="lineChartColors"
-                [legend]="lineChartLegend"
-                [chartType]="lineChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
-      </div>
+        <div>
+            <canvas baseChart style="max-height:100%;height:auto;width:100%;max-width:100%;margin:auto;display:inline;"
+                    [datasets]="lineChartData"
+                    [labels]="lineChartLabels"
+                    [options]="lineChartOptions"
+                    [colors]="lineChartColors"
+                    [legend]="lineChartLegend"
+                    [chartType]="lineChartType"
+                    (chartClick)="chartClicked($event)"></canvas>
+        </div>
     </div>
-  </div>
-</ion-content>
+</div>
+
+
 
