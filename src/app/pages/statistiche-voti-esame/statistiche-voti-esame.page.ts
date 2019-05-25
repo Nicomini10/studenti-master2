@@ -95,7 +95,6 @@ export class StatisticheVotiEsamePage implements OnInit {
 
     public chartHovered(e: any): void {
         console.log(e);
-        this.globalData.goTo(this.currentPage, '/grafico', 'forward', false);
     }
 
     constructor(public globalData: GlobalDataService) {
@@ -119,8 +118,8 @@ export class StatisticheVotiEsamePage implements OnInit {
                 ['Fuori corso', 20]
             ],
             options: {
-                'width': 430,
-                'height': 300
+                'width': 450,
+                'height': 230
             }
         };
     }

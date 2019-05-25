@@ -37,7 +37,6 @@ const routes: Routes = [
         path: 'statistiche-voti-esame',
         loadChildren: './pages/statistiche-voti-esame/statistiche-voti-esame.module#StatisticheVotiEsamePageModule'
     },
-  { path: 'grafico', loadChildren: './pages/grafico/grafico.module#GraficoPageModule' }
 ];
 
 @NgModule({
