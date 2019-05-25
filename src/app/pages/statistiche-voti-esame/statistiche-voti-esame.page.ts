@@ -77,18 +77,11 @@ export class StatisticheVotiEsamePage implements OnInit {
     // events
     public chartClicked(e: any): void {
         console.log(e);
-        this.globalData.goTo(this.currentPage, '/grafico', 'forward', false);
     }
 
-
-    visualizzaStoricoEsami($event) {
-        const element = this.lineChart.lastActive[0];
-        const labelClicked = !element && $event && $event.offsetY && $event.offsetY < 30;
-
-        console.dir(element);
-        if (!element && !labelClicked) {
-            this.globalData.goTo(this.currentPage, '/grafico', 'forward', false);
-        }
+    public chartHovered(e: any): void {
+        console.log(e);
+        this.globalData.goTo(this.currentPage, '/grafico', 'forward', false);
     }
 
     constructor(public globalData: GlobalDataService) {
