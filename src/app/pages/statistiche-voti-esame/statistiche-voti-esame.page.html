@@ -43,7 +43,14 @@
         <ion-label text-center>Percentuale superamenti esame</ion-label>
     </ion-item-divider>
 
-            <google-chart [data]="pieChartData"></google-chart>
+    <div style="display: block">
+        <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHoveredG($event)"
+                (chartClick)="chartClickedG($event)"></canvas>
+    </div>
 
 <ion-item-divider>
     <ion-label text-center>Media voti per ogni anno</ion-label>

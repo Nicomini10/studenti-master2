@@ -13,6 +13,20 @@ export class StatisticheVotiEsamePage implements OnInit {
 
     currentPage = '/statistiche-voti-esame';
 
+
+    public doughnutChartLabels:string[] = ['1°Anno', '2°Anno', '3°Anno', 'Fuori corso'];
+    public doughnutChartData:number[] = [20, 45, 10, 15];
+    public doughnutChartType:string = 'doughnut';
+
+// events
+    public chartClickedG(e:any):void {
+        console.log(e);
+    }
+
+    public chartHoveredG(e:any):void {
+        console.log(e);
+    }
+
     public barChartOptions: any = {
         scaleShowVerticalLines: false,
         responsive: true
