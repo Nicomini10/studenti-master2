@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {GlobalDataService} from '../../services/global-data.service';
+import {ActionSheetController} from '@ionic/angular';
 
 @Component({
     selector: 'app-statistiche-voti-esame',
@@ -106,7 +107,63 @@ export class StatisticheVotiEsamePage implements OnInit {
         console.log(e);
     }
 
-    constructor(public globalData: GlobalDataService) {
+    constructor(public globalData: GlobalDataService, private actionSheetController: ActionSheetController, ) {
+    }
+
+    async openActionShett(){
+        const actionSheet = await this.actionSheetController.create({
+            header: 'ANNO',
+            buttons: [{
+                text: '2011',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Delete clicked');
+                }
+            }, {
+                text: '2012',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Share clicked');
+                }
+            }, {
+                text: '2013',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Play clicked');
+                }
+            }, {
+                text: '2014',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Favorite clicked');
+                }
+            }, {
+                text: '2015',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Cancel clicked');
+                }
+            }, {
+                text: '2016',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Favorite clicked');
+                }
+            }, {
+                text: '2017',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Favorite clicked');
+                }
+            }, {
+                text: '2018',
+                icon: 'arrow-dropright',
+                handler: () => {
+                    console.log('Favorite clicked');
+                }
+            }]
+        });
+        await actionSheet.present();
     }
 
     ngOnInit() {
