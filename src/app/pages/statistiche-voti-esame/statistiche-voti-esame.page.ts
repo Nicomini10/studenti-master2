@@ -57,7 +57,7 @@ export class StatisticheVotiEsamePage implements OnInit {
 
 
     public lineChartData: Array<any> = [
-        {data: [25, 26, 25, 24, 23, 24, 26], label: 'Media voti'},
+        {data: [25, 26, 25, 24, 23, 24, 26], label: 'Voto medio'},
     ];
     public lineChartLabels: Array<any> = ['2012', '2013', '2014', '2015', '2016', '2017', '2018'];
     public lineChartOptions: any = {
