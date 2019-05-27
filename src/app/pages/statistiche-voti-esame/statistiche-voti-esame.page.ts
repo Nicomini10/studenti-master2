@@ -33,9 +33,9 @@ export class StatisticheVotiEsamePage implements OnInit {
             yAxes: [{
                 display: true,
                 ticks: {
-                    stepSize: 2,
-                    min: 18,
-                    max: 30
+                    stepSize: 20,
+                    min: 0,
+                    max: 100
                 }
             }]
         },
@@ -139,59 +139,59 @@ export class StatisticheVotiEsamePage implements OnInit {
 
     async openActionShett() {
         const actionSheet = await this.actionSheetController.create({
-            header: 'Anno',
+            header: 'Selezione dell\'anno',
             buttons: [{
                 text: '2011',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2011;
                     console.log('Delete clicked');
                 }
             }, {
                 text: '2012',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2012;
                     console.log('Share clicked');
                 }
             }, {
                 text: '2013',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2013;
                     console.log('Play clicked');
                 }
             }, {
                 text: '2014',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2014;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2015',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2015;
                     console.log('Cancel clicked');
                 }
             }, {
                 text: '2016',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2016;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2017',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2017;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2018',
-                icon: 'arrow-dropright',
+                icon: 'ios-arrow-forward',
                 handler: () => {
                     this.dataButton = 2018;
                     console.log('Favorite clicked');
