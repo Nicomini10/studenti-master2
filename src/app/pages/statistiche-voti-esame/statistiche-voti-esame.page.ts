@@ -42,7 +42,7 @@ export class StatisticheVotiEsamePage implements OnInit {
     public barChartLegend: boolean = true;
 
     public barChartData: any[] = [
-        {data: [20, 24, 22, 30, 27, 19, 26, 11, 25, 11, 28, 5, 6], label: 'Distribuzione voti'},
+        {data: [20, 24, 22, 30, 27, 19, 26, 11, 25, 11, 28, 5, 6], label: 'Distribuzione voto'},
     ];
 
 
