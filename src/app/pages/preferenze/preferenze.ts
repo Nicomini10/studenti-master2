@@ -172,7 +172,7 @@ export class PreferenzePage implements OnInit {
 
         Promise.all([storedNewsAteneo, storedNewsDipartimento, storedNewsCds, storedCarriera ]).then(
             data => {
-                //  console.log('Stored New ' + data[0] + ' ' + data[1]);
+                //  console.log('Stored New ' + dataButton[0] + ' ' + dataButton[1]);
                 if ((this.newsAteneo !== data[0]) ||
                     (this.newsCds !== data[1]) ||
                     (this.newsDipartimento !== data[2]) ||
@@ -242,7 +242,7 @@ export class PreferenzePage implements OnInit {
         // // console.dir(jPref);
         // this.http.post(url, jPref)
         //     .pipe(timeout(this.sync.getTimeout()))
-        //     .subscribe(data => {
+        //     .subscribe(dataButton => {
         //
         //             // SALVA LE PREFERENZE IN LOCALE
         //             this.storage.set('newsDipartimento', this.newsDipartimento);

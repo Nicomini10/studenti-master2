@@ -386,13 +386,13 @@ export class AppComponent {
 
                     this.mostraNotifica(data);
 
-                    // if (data && data.wasTapped) {
+                    // if (dataButton && dataButton.wasTapped) {
                     //     // console.log('Received in background');
                     //     // Notifica con app in background
-                    //     this.mostraNotifica(data);
+                    //     this.mostraNotifica(dataButton);
                     // } else {
                     //     // Notifica con app in primo piano
-                    //     this.mostraNotifica(data);
+                    //     this.mostraNotifica(dataButton);
                     // }
                 });
 
@@ -437,11 +437,11 @@ export class AppComponent {
             titolo = dati.title;
             messaggio = decodeURIComponent(escape(dati.message));
         } else if (data.aps) {
-            GlobalDataService.log(1, 'FCM: uso data.aps.title', data.aps);
+            GlobalDataService.log(1, 'FCM: uso dataButton.aps.title', data.aps);
             titolo = data.aps.alert.title;
             messaggio = decodeURIComponent(escape(data.aps.alert.body));
         } else if (data.title) {
-            GlobalDataService.log(1, 'FCM: uso data.title', data);
+            GlobalDataService.log(1, 'FCM: uso dataButton.title', data);
             titolo = data.title;
             messaggio = decodeURIComponent(escape(data.body));
         }

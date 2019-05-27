@@ -99,12 +99,12 @@ export class PianoDiStudiPage implements OnInit {
         //         this.threeDeeTouchEnabled = true;
         //         this.threeDeeTouch.watchForceTouches()
         //             .subscribe(
-        //                 (data: ThreeDeeTouchForceTouch) => {
-        //                     console.dir(data);
-        //                     console.log('Force touch %' + data.force);
-        //                     console.log('Force touch timestamp: ' + data.timestamp);
-        //                     console.log('Force touch x: ' + data.x);
-        //                     console.log('Force touch y: ' + data.y);
+        //                 (dataButton: ThreeDeeTouchForceTouch) => {
+        //                     console.dir(dataButton);
+        //                     console.log('Force touch %' + dataButton.force);
+        //                     console.log('Force touch timestamp: ' + dataButton.timestamp);
+        //                     console.log('Force touch x: ' + dataButton.x);
+        //                     console.log('Force touch y: ' + dataButton.y);
         //                     console.dir(this.lastItem);
         //                 }
         //             );
@@ -190,8 +190,8 @@ export class PianoDiStudiPage implements OnInit {
     //         return;
     //
     //     this.sync.getJson(18, true).then(
-    //         (data) => {
-    //             let dati = data[0];
+    //         (dataButton) => {
+    //             let dati = dataButton[0];
     //             //console.dir(dati);
     //         },
     //         (err) => {

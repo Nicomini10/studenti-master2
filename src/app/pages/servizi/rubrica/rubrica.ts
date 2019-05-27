@@ -276,10 +276,10 @@ export class RubricaPage implements OnInit {
     }
 
     // getItems(ev: any) {
-    //     this.storage.get(this.idServizio.toString()).then((data) => {
+    //     this.storage.get(this.idServizio.toString()).then((dataButton) => {
     //         const val = ev.target.value;
     //         if (val && val.trim() !== '') {
-    //             this.rubrica = data[0].filter((item) => {
+    //             this.rubrica = dataButton[0].filter((item) => {
     //                 if (item.nome == null) {
     //                     item.nome = '';
     //                 }
@@ -309,7 +309,7 @@ export class RubricaPage implements OnInit {
     //                     (item.tel4.indexOf(val) > -1) );
     //             });
     //         } else {
-    //             this.rubrica = data[0];
+    //             this.rubrica = dataButton[0];
     //         }
     //     });
     // }

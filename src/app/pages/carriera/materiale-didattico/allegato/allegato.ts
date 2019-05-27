@@ -37,7 +37,7 @@ export class AllegatoPage implements OnInit {
     formatStringDate(stringDate): string {
         return stringDate;
         // if (this.allegato)
-        //     return this.allegato.data;
+        //     return this.allegato.dataButton;
         // else
         //     return this.providers.formatStringDate(stringDate);
     }

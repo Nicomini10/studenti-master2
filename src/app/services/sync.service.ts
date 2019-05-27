@@ -353,7 +353,7 @@ export class SyncService {
                             //     .then(response => {
                             //         GlobalDataService.log(0, url, response);
                             //
-                            //         const dati = JSON.parse(response.data);
+                            //         const dati = JSON.parse(response.dataButton);
                             //
                             //         // Salvo i json nello storage
                             //         if (dati) {
@@ -384,9 +384,9 @@ export class SyncService {
                             //                 let storedPassword = this.storage.get('password');
                             //
                             //                 Promise.all([storedUsername, storedPassword]).then(
-                            //                     data => {
-                            //                         storedUsername = data[0];
-                            //                         storedPassword = data[1];
+                            //                     dataButton => {
+                            //                         storedUsername = dataButton[0];
+                            //                         storedPassword = dataButton[1];
                             //
                             //                         url = this.urlCheckToken;
                             //                         const bodyCheckToken = {

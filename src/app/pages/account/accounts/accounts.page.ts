@@ -91,9 +91,9 @@ export class AccountsPage implements OnInit {
 
         this.sync.getJson(this.idServizio, sync).then(
             (data) => {
-                // if (this.sync.dataIsChanged(this.accounts, data[0]))
+                // if (this.sync.dataIsChanged(this.accounts, dataButton[0]))
                 if ( this.sync.dataIsChanged(this.accounts, data[0]) ) {
-                    // if (JSON.stringify(this.accounts) !== JSON.stringify(data[0])) {
+                    // if (JSON.stringify(this.accounts) !== JSON.stringify(dataButton[0])) {
                     this.accounts = data[0];
                     if (this.accounts) {
                         this.nrAccounts = '(' + this.accounts.length + ')';
@@ -234,9 +234,9 @@ export class AccountsPage implements OnInit {
             //         this.http.post(this.sync.getUrlDisconnetti(), body, {})
             //             .pipe(timeout(this.sync.getTimeout()))
             //             .subscribe(
-            //                 data => {
+            //                 dataButton => {
             //                     loading.dismiss();
-            //                     if (data) {
+            //                     if (dataButton) {
             //                         this.toastCtrl.create({
             //                             message: 'Il dispositivo è stato disconnesso.',
             //                             duration: 5000

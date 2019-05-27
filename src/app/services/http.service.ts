@@ -231,8 +231,8 @@ export class HttpService {
                 // this.http.get('https://service.unimol.it/studenti/api/ultimaVersione.php')
                 //    // .pipe(map(res => res.json()))
                 //     .subscribe(
-                //         (data) => {
-                //             // console.dir(data);
+                //         (dataButton) => {
+                //             // console.dir(dataButton);
                 //             this.connessione Inizializzata = true;
                 //             this.connected = true;
                 //             this.connessioneInCorso = false;
@@ -266,9 +266,9 @@ export class HttpService {
         this.getConnected();
         // this.http.get('https://httpbin.org/ip', {}, {})
         //     .then(
-        //         (data) => {
+        //         (dataButton) => {
         //             this.setConnected(true);
-        //             console.dir(data);
+        //             console.dir(dataButton);
         //         },
         //         (err) => {
         //             this.setConnected(false);
@@ -278,7 +278,7 @@ export class HttpService {
 
     // testNetworkStartup() {
     //     this.services.get('https://httpbin.org/ip', {})
-    //         .then(data => {
+    //         .then(dataButton => {
     //             return true;
     //         }, (err) => {
     //             return false;

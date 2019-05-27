@@ -470,7 +470,7 @@ export class HomePage implements OnInit {
             this.media_aritm = 0;
         }
 
-        // La media ponderata è data dal prodotto tra voto e cfu diviso per il totale dei cfu sostenuti
+        // La media ponderata è dataButton dal prodotto tra voto e cfu diviso per il totale dei cfu sostenuti
         // usiamo la variabile $cfu_per_media in cui non compaiono gli esami in sovrannumero
         if (this.cfu_sup > 0) {
             this.media_pond = ( somma_pesata / cfu_tot_media).toFixed(2);
@@ -561,7 +561,7 @@ export class HomePage implements OnInit {
                 tooltips: {
                     callbacks: {
                         title: function(tooltipItem, data) {
-                            // return data['labels'][tooltipItem[0]['index']];
+                            // return dataButton['labels'][tooltipItem[0]['index']];
                             return data['items'][tooltipItem[0]['index']]['DESCRIZIONE'];
                         },
                         label: function(tooltipItem, data) {
@@ -579,6 +579,7 @@ export class HomePage implements OnInit {
                             return item['STATO'];
                         },
                         afterLabel: function(tooltipItem, data) {
+                            const item = data['items'][tooltipItem['index']];
                             const item = data['items'][tooltipItem['index']];
                             const dati = [];
                             let i = 0;

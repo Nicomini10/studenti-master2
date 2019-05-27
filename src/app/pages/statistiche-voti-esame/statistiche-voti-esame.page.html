@@ -20,7 +20,9 @@
 <ion-content>
 
     <ion-item-divider>
-        <ion-label text-center>Media dei voti nel corso degli anni</ion-label>
+    </ion-item-divider>
+    <ion-item-divider>
+        <ion-label text-center>Voto medio della materia nel corso degli anni</ion-label>
     </ion-item-divider>
 
     <div class="row">
@@ -40,7 +42,9 @@
     </div>
 
     <ion-item-divider>
-        <ion-label text-center>Percentuale superamenti esame</ion-label>
+    </ion-item-divider>
+    <ion-item-divider>
+        <ion-label text-center>Percentuale di superamento dell' esame negli anni</ion-label>
     </ion-item-divider>
 
     <div style="display: block">
@@ -52,12 +56,14 @@
                 (chartClick)="chartClickedG($event)"></canvas>
     </div>
 
+    <ion-item-divider>
+    </ion-item-divider>
 <ion-item-divider>
     <ion-label text-center>Distribuzione dei voti nell'anno</ion-label>
 </ion-item-divider>
 
     <div text-center>
-    <ion-button class="button-outline" (click)="openActionShett()">{{data}}</ion-button>
+    <ion-button class="button-outline" (click)="openActionShett()">{{dataButton}}</ion-button>
     </div>
 
 <div>

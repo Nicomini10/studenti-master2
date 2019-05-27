@@ -11,7 +11,7 @@ export class StatisticheVotiEsamePage implements OnInit {
 
     srcPage: string;
     pieChartData;
-    data: any;
+    dataButton: any;
     currentPage = '/statistiche-voti-esame';
 
 
@@ -90,9 +90,9 @@ export class StatisticheVotiEsamePage implements OnInit {
     // public randomize(): void {
     //     let _lineChartData: Array<any> = new Array(this.lineChartData.length);
     //     for (let i = 0; i < this.lineChartData.length; i++) {
-    //         _lineChartData[i] = {data: new Array(this.lineChartData[i].data.length), label: this.lineChartData[i].label};
-    //         for (let j = 0; j < this.lineChartData[i].data.length; j++) {
-    //             _lineChartData[i].data[j] = Math.floor((Math.random() * 100) + 1);
+    //         _lineChartData[i] = {dataButton: new Array(this.lineChartData[i].dataButton.length), label: this.lineChartData[i].label};
+    //         for (let j = 0; j < this.lineChartData[i].dataButton.length; j++) {
+    //             _lineChartData[i].dataButton[j] = Math.floor((Math.random() * 100) + 1);
     //         }
     //     }
     //     this.lineChartData = _lineChartData;
@@ -108,7 +108,7 @@ export class StatisticheVotiEsamePage implements OnInit {
     }
 
     constructor(public globalData: GlobalDataService, private actionSheetController: ActionSheetController,) {
-        this.data = 2011;
+        this.dataButton = 2011;
     }
 
     async openActionShett() {
@@ -118,56 +118,56 @@ export class StatisticheVotiEsamePage implements OnInit {
                 text: '2011',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2011;
+                    this.dataButton = 2011;
                     console.log('Delete clicked');
                 }
             }, {
                 text: '2012',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2012;
+                    this.dataButton = 2012;
                     console.log('Share clicked');
                 }
             }, {
                 text: '2013',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2013;
+                    this.dataButton = 2013;
                     console.log('Play clicked');
                 }
             }, {
                 text: '2014',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2014;
+                    this.dataButton = 2014;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2015',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2015;
+                    this.dataButton = 2015;
                     console.log('Cancel clicked');
                 }
             }, {
                 text: '2016',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2016;
+                    this.dataButton = 2016;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2017',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2017;
+                    this.dataButton = 2017;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2018',
                 icon: 'arrow-dropright',
                 handler: () => {
-                    this.data = 2018;
+                    this.dataButton = 2018;
                     console.log('Favorite clicked');
                 }
             }]

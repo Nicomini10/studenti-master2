@@ -155,9 +155,9 @@ export class CalendarioPage implements OnInit {
         }
 
         this.sync.getJson(this.idServizio, sync).then(
-            (data) => {
-                this.eventi = data[0];
-                this.dataAggiornamento = SyncService.dataAggiornamento(data);
+            (dataButton) => {
+                this.eventi = dataButton[0];
+                this.dataAggiornamento = SyncService.dataAggiornamento(dataButton);
                 this.caricaEventi();
                 setTimeout(() => {
                     this.controllaAggiornamento();

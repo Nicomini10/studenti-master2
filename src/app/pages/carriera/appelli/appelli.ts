@@ -274,7 +274,7 @@ export class AppelliPage implements OnChanges, OnInit {
 
                                     this.esse3.prenotaAppello(appello.p10_app_app_id, appello.p10_app_ad_id, appello.adsce_id).then(
                                         (data) => {
-                                            // console.dir(data);
+                                            // console.dir(dataButton);
                                             this.aggiorna(false, true);
 
                                             // TODO
@@ -369,7 +369,7 @@ export class AppelliPage implements OnChanges, OnInit {
 
                                 this.esse3.cancellaPrenotazione(prenotazione.app_id, prenotazione.ad_id, prenotazione.adsce_id).then(
                                     (data) => {
-                                        // console.dir(data);
+                                        // console.dir(dataButton);
                                         if (data['_body'] === 'success') {
                                             this.aggiorna(false, true);
                                             loading.dismiss();

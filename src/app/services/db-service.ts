@@ -68,7 +68,7 @@ export class DBService {
                 db.executeSql('CREATE TABLE IF NOT EXISTS allegati (' +
                     'id integer primary key, ' +
                     'ad_id varchar(50), ' +
-                    'data bigint(10),' +
+                    'dataButton bigint(10),' +
                     'tipo varchar(50), ' +
                     'estensione varchar(50), ' +
                     'scaricato NUMERIC)', []).then((op) => {
@@ -106,7 +106,7 @@ export class DBService {
                         .then((esitoQuery) => {
                             if (esitoQuery.rows.length > 0) {
                                 db.executeSql(
-                                    'UPDATE allegati SET (tipo, ad_id, estensione, data, scaricato) = (?, ?, ?, ?, ?) ' +
+                                    'UPDATE allegati SET (tipo, ad_id, estensione, dataButton, scaricato) = (?, ?, ?, ?, ?) ' +
                                     'WHERE id = ?',
                                     [tipo, ad_id, estensione, data, 1, id]).then(
                                     () => {
@@ -121,7 +121,7 @@ export class DBService {
 
                             } else {
                                 db.executeSql(
-                                    'INSERT INTO allegati (id, tipo, ad_id, estensione, data, scaricato) VALUES (?, ?, ?, ?, ?, ?) ',
+                                    'INSERT INTO allegati (id, tipo, ad_id, estensione, dataButton, scaricato) VALUES (?, ?, ?, ?, ?, ?) ',
                                     [id, tipo, ad_id, estensione, data, 1]).then(() => {
                                     // console.log('Insert files Ok.');
                                     resolve();
