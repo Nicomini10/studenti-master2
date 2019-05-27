@@ -29,6 +29,16 @@ export class StatisticheVotiEsamePage implements OnInit {
     }
 
     public barChartOptions: any = {
+        scales: {
+            yAxes: [{
+                display: true,
+                ticks: {
+                    stepSize: 2,
+                    min: 18,
+                    max: 30
+                }
+            }]
+        },
         legend: {
             display: false
         },
@@ -47,10 +57,20 @@ export class StatisticheVotiEsamePage implements OnInit {
 
 
     public lineChartData: Array<any> = [
-        {data: [20, 24, 22, 30, 27, 19, 26], label: 'Media voti'},
+        {data: [25, 26, 25, 24, 23, 24, 26], label: 'Media voti'},
     ];
     public lineChartLabels: Array<any> = ['2012', '2013', '2014', '2015', '2016', '2017', '2018'];
     public lineChartOptions: any = {
+        scales: {
+            yAxes: [{
+                display: true,
+                ticks: {
+                    stepSize: 2,
+                    min: 18,
+                    max: 30
+                }
+            }]
+        },
         legend: {
             display: false
         },
