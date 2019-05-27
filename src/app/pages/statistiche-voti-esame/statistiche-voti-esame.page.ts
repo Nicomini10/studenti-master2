@@ -29,6 +29,9 @@ export class StatisticheVotiEsamePage implements OnInit {
     }
 
     public barChartOptions: any = {
+        legend: {
+            display: false
+        },
         scaleShowVerticalLines: false,
         responsive: true
     };
@@ -39,7 +42,7 @@ export class StatisticheVotiEsamePage implements OnInit {
     public barChartLegend: boolean = true;
 
     public barChartData: any[] = [
-        {data: [20, 24, 22, 30, 27, 19, 26, 11, 25, 11, 28, 5, 6], label: 'Distribzione voti'},
+        {data: [20, 24, 22, 30, 27, 19, 26, 11, 25, 11, 28, 5, 6], label: 'Distribuzione voti'},
     ];
 
 
@@ -48,6 +51,9 @@ export class StatisticheVotiEsamePage implements OnInit {
     ];
     public lineChartLabels: Array<any> = ['2012', '2013', '2014', '2015', '2016', '2017', '2018'];
     public lineChartOptions: any = {
+        legend: {
+            display: false
+        },
         responsive: true
     };
     public lineChartColors: Array<any> = [
