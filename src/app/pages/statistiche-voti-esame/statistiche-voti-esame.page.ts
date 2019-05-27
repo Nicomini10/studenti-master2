@@ -11,20 +11,20 @@ export class StatisticheVotiEsamePage implements OnInit {
 
     srcPage: string;
     pieChartData;
-
+    data: any;
     currentPage = '/statistiche-voti-esame';
 
 
-    public doughnutChartLabels:string[] = ['1°Anno', '2°Anno', '3°Anno', 'Fuori corso'];
-    public doughnutChartData:number[] = [20, 45, 10, 15];
-    public doughnutChartType:string = 'doughnut';
+    public doughnutChartLabels: string[] = ['1°Anno', '2°Anno', '3°Anno', 'Fuori corso'];
+    public doughnutChartData: number[] = [20, 45, 10, 15];
+    public doughnutChartType: string = 'doughnut';
 
 // events
-    public chartClickedG(e:any):void {
+    public chartClickedG(e: any): void {
         console.log(e);
     }
 
-    public chartHoveredG(e:any):void {
+    public chartHoveredG(e: any): void {
         console.log(e);
     }
 
@@ -107,58 +107,67 @@ export class StatisticheVotiEsamePage implements OnInit {
         console.log(e);
     }
 
-    constructor(public globalData: GlobalDataService, private actionSheetController: ActionSheetController, ) {
+    constructor(public globalData: GlobalDataService, private actionSheetController: ActionSheetController,) {
+        this.data = 2011;
     }
 
-    async openActionShett(){
+    async openActionShett() {
         const actionSheet = await this.actionSheetController.create({
-            header: 'ANNO',
+            header: 'Anno',
             buttons: [{
                 text: '2011',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2011;
                     console.log('Delete clicked');
                 }
             }, {
                 text: '2012',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2012;
                     console.log('Share clicked');
                 }
             }, {
                 text: '2013',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2013;
                     console.log('Play clicked');
                 }
             }, {
                 text: '2014',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2014;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2015',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2015;
                     console.log('Cancel clicked');
                 }
             }, {
                 text: '2016',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2016;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2017',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2017;
                     console.log('Favorite clicked');
                 }
             }, {
                 text: '2018',
                 icon: 'arrow-dropright',
                 handler: () => {
+                    this.data = 2018;
                     console.log('Favorite clicked');
                 }
             }]
@@ -171,7 +180,6 @@ export class StatisticheVotiEsamePage implements OnInit {
         this.srcPage = this.globalData.srcPage;
         this.useAngularLibrary();
     }
-
 
     useAngularLibrary() {
         this.pieChartData = {
