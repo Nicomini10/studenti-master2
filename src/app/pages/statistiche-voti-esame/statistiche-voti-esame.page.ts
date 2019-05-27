@@ -14,7 +14,6 @@ export class StatisticheVotiEsamePage implements OnInit {
     dataButton: any;
     currentPage = '/statistiche-voti-esame';
 
-
     public doughnutChartLabels: string[] = ['1°Anno', '2°Anno', '3°Anno', 'Fuori corso'];
     public doughnutChartData: number[] = [20, 45, 10, 15];
     public doughnutChartType: string = 'doughnut';
@@ -202,7 +201,6 @@ export class StatisticheVotiEsamePage implements OnInit {
     }
 
     ngOnInit() {
-
         this.srcPage = this.globalData.srcPage;
         this.useAngularLibrary();
     }

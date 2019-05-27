@@ -580,7 +580,6 @@ export class HomePage implements OnInit {
                         },
                         afterLabel: function(tooltipItem, data) {
                             const item = data['items'][tooltipItem['index']];
-                            const item = data['items'][tooltipItem['index']];
                             const dati = [];
                             let i = 0;
                             if (item['CFU']) {
