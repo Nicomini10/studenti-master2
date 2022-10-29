@@ -80,7 +80,7 @@
     "core-js": "^2.6.3",
     "es6-promise-plugin": "^4.2.2",
     "es7-object-polyfill": "0.0.7",
-    "karma": "^4.0.0",
+    "karma": "^6.4.1",
     "ng2-charts": "^2.2.3",
     "ng2-google-charts": "^4.0.0",
     "rxjs": "6.3.3",
